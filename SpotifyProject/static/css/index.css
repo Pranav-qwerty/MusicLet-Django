@@ -1,0 +1,67 @@
+/* Main Content */
+.content {
+  background-color: black;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotate(-20deg);
+  animation-name: font-colour;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.name {
+  font-size: 78px;
+}
+.every {
+  font-size: 70px;
+}
+.and {
+  font-size: 48px;
+}
+@keyframes font-colour {
+  0% {
+    color: white;
+  }
+  10% {
+    color: blueviolet;
+  }
+  20% {
+    color: violet;
+  }
+  30% {
+    color: blue;
+  }
+  40% {
+    color: chartreuse;
+  }
+  50% {
+    color: cadetblue;
+  }
+  60% {
+    color: chocolate;
+  }
+  70% {
+    color: lawngreen;
+  }
+  80% {
+    color: rgb(0, 244, 252);
+  }
+  90% {
+    color: darkolivegreen;
+  }
+  100% {
+    color: darkmagenta;
+  }
+}
+/* Footer */
+.footer123 {
+  display: flex;
+  justify-content: center;
+}

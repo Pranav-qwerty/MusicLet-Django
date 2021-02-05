@@ -1,0 +1,51 @@
+form{
+    margin: auto;
+    display: flex;
+    width: 500px;
+}
+body{
+    overflow-x: hidden;
+}
+.btn{
+    width: 150px;
+}
+.item-list{
+    width: 280px;
+    height: 154px;
+    background: linear-gradient(-45deg, #EE77e2, #E73C7e, #23A6D5, #23D5AB);
+    background-size: 400%;
+    animation: changeColor 5s ease-in-out infinite;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.latest{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes changeColor{
+    0%{
+        background-position: 0, 50%;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

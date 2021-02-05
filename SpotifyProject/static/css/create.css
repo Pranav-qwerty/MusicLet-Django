@@ -1,0 +1,60 @@
+.bootstrap{
+    height: 90vh;
+    width: 50vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    animation-name: bg_img;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.form-check2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.roomcreate{
+    justify-content: center;
+    width: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.private{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.public{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes bg_img{
+    0%{
+        background: url("/static/img/1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    33%{
+        background: url("/static/img/2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    66%{
+        background: url("/static/img/3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url("/static/img/4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

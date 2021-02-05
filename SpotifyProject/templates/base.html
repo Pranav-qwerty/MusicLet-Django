@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %} {% endblock css %}
+    <link rel="stylesheet" href="/static/css/base.css">
+    
+    <title>{% block Title %}{% endblock Title %}</title>
+</head>
+<body>
+    <div class="navbar123">
+        <div class="logo123 unselectable">MusicLet</div>
+        <div class="nav-list123">
+            <li class="nav-item123 unselectable"><a href="/">Home</a></li>
+            <li class="nav-item123 unselectable"><a href="/join">Join Room</a></li>
+            <li class="nav-item123 unselectable"><a href="/create">Create Room</a></li>
+        </div>
+        <div class="account unselectable">
+            <span class="name123">{{request.user}}</span>
+            <button type="button" class="btn12 btn-danger"><a href="/logout"><b>LogOut</b></a></button>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
